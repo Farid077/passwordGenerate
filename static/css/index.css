@@ -1,0 +1,149 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.main{
+    width: 28%;
+}
+
+div.main > div{
+    background-color: #24232b;
+    margin: 10px;
+    padding: 10px;
+}
+
+div.title{
+    background-color: transparent !important;
+    color: #8d8a9b;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 200;
+}
+
+div.head{
+    position: relative;
+}
+
+div.head > input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    padding-right: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: rgb(200, 200, 200);
+    font-size: 20px;
+}
+
+div.head > i{
+    position: absolute;
+    right: 20px;
+    top: 22px;
+    font-size: 20px;
+    color: #a1eba9;
+    font-weight: bold;
+}
+
+div.body > form > div{
+    padding: 10px;
+}
+
+div.body > form > div > input{
+    padding: 0 !important;
+}
+
+div.inp:nth-child(1){
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+div.inp:nth-child(1) > span:nth-child(1){
+    flex-grow: 1;
+}
+
+div.inp:nth-child(1) > span:nth-child(2){
+    font-size: 30px;
+    color: #a1eba9;
+}
+
+
+div.body > form > div > label{
+    color: white;
+    padding-left: 10px;
+}
+
+div.body > form > div > input[type=range], button{
+    display: block;
+    width: 100%;
+}
+
+button{
+    background-color: #a1eba9;
+    padding: 15px;
+    border: none;
+}
+
+button > i{
+    padding-left: 10px;
+}
+
+div.difficult{
+    display: flex;
+    align-items: center;
+    color: rgb(200, 200, 200);
+    background-color: black;
+    margin: 10px !important;
+
+}
+
+div.left{
+    flex-grow: 1;
+    font-size: 20px;
+}
+
+div.right{
+    display: flex;
+}
+
+div.right > div{
+    width: 10px;
+    height: 25px;
+    border: 1px solid white;
+    margin: 5px;
+}
+
+
+@media screen and (max-width:1200px){
+    div.main{
+        width: 50%;
+    }
+}   
+
+@media screen and (max-width:1000px){
+    div.main{
+        width: 70%;
+    }
+}   
+
+@media screen and (max-width:700px){
+    div.main{
+        width: 90%;
+    }
+}   

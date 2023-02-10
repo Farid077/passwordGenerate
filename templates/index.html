@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../static/css/index.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="main">
+            <div class="title">
+                Password Generate
+            </div>
+            <div class="head">
+                <input class="input1" type="text" placeholder="ad4231s">
+                <i class="fa fa-copy" onclick="copy(this)"></i>
+            </div>
+            <div class="body">
+                <form action="" onsubmit="return false">
+                    <div class="inp">
+                        <span>charset length</span>
+                        <span id="lenResult">0</span>
+                    </div>
+                    <div class="inp">
+                        <input type="range" id="length" max="16" min="0" value="0">
+                    </div>
+                    <div class="inp">
+                        <input class="in" type="checkbox" id="upper">
+                        <label for="upper">Include Uppercase Letters</label>
+                    </div>
+                    <div class="inp">
+                        <input class="in" type="checkbox" id="lower">
+                        <label for="lower">Include Lowerse Letters</label>
+                    </div>
+                    <div class="inp">
+                        <input class="in" type="checkbox" id="number">
+                        <label for="number">Include Number</label>
+                    </div>
+                    <div class="inp">
+                        <input class="in" type="checkbox" id="symbol">
+                        <label for="symbol">Include Symbol</label>
+                    </div>
+                    <div class='difficult'>
+                        <div class="left">
+                            STRENGTH
+                        </div>
+                        <div class="right">
+                            <div class="blog easy"></div>
+                            <div class="blog medium"></div>
+                            <div class="blog hard"></div>
+                            <div class="blog advance"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="generate()">
+                            Generate
+                            <i class='fa fa-arrow-right'></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>        
+        <script src="../static/js/index.js"></script>
+    </body>
+</html>
